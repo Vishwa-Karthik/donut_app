@@ -38,27 +38,27 @@ class _HomePageState extends State<HomePage> {
   List<Widget> myTabs = [
     //   //* Donut Tab
     MyTab(
-      iconPath: "lib/icons/donut.png",
+      iconPath: "assets/icons/donut.png",
     ),
 
     //   //* Burger Tab
     MyTab(
-      iconPath: "lib/icons/burger.png",
+      iconPath: "assets/icons/burger.png",
     ),
 
     //   //* Smoothie Tab
     MyTab(
-      iconPath: "lib/icons/smoothie.png",
+      iconPath: "assets/icons/smoothie.png",
     ),
 
     //   //* Pancake Tab
     MyTab(
-      iconPath: "lib/icons/pancakes.png",
+      iconPath: "assets/icons/pancakes.png",
     ),
 
     //   //* Pizza Tab
     MyTab(
-      iconPath: "lib/icons/pizza.png",
+      iconPath: "assets/icons/pizza.png",
     ),
   ];
 
@@ -68,9 +68,9 @@ class _HomePageState extends State<HomePage> {
       child: DefaultTabController(
         length: myTabs.length,
         child: Scaffold(
-          backgroundColor: Colors.pink.shade300,
+          backgroundColor: Colors.deepPurple.shade100,
           appBar: AppBar(
-            backgroundColor: Colors.pinkAccent.shade400,
+            backgroundColor: Colors.deepPurple,
             leading: Padding(
               padding: const EdgeInsets.only(left: 20.0),
               child: const Icon(Icons.menu),
@@ -99,7 +99,8 @@ class _HomePageState extends State<HomePage> {
             children: [
               //* SubTitle line
               Padding(
-                padding: const EdgeInsets.all(35.0),
+                padding:
+                    const EdgeInsets.only(left: 35.0, right: 35.0, top: 35.0),
                 child: Row(
                   children: [
                     Text(
@@ -114,13 +115,9 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
 
-              const SizedBox(
-                height: 5,
-              ),
-
               //* Tab Bar
               Padding(
-                padding: const EdgeInsets.only(top: 5.0, left: 15, right: 15),
+                padding: const EdgeInsets.only(left: 15, right: 15),
                 child: TabBar(
                   tabs: myTabs,
                 ),
@@ -132,13 +129,13 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     //* Donut Tab
                     DonutTab(),
-                    //* Burger Tab
+                    //   //* Burger Tab
                     BurgerTab(),
-                    //* Smoothie Tab
+                    //   //* Smoothie Tab
                     SmoothieTab(),
-                    //* Pancake Tab
+                    //   //* Pancake Tab
                     PancakeTab(),
-                    //* Pizza Tab
+                    //   //* Pizza Tab
                     PizzaTab(),
                   ],
                 ),
