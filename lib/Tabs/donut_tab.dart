@@ -5,7 +5,7 @@ class DonutTab extends StatelessWidget {
   List donutOnSale = [
     ["StrawBerry", "36", Colors.blue, "assets/images/donut.png"],
     ["Chocolate", "72", Colors.brown, "assets/images/donut_1.png"],
-    ["Mango ", "69", Colors.yellow, "assets/images/donut_2.png"],
+    ["Mango ", "69", Colors.green, "assets/images/donut_2.png"],
     ["Mango", "96", Colors.purple, "assets/images/donut_4.png"],
   ];
 
